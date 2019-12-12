@@ -10,9 +10,10 @@ namespace _1212
     {
         static void Main(string[] args)
         {
-            Console.Write("Please enter secret number: ");
-            string secretAsString = Console.ReadLine();
-            int secret = Convert.ToInt32(secretAsString);
+            //Console.Write("Please enter secret number: ");
+            //string secretAsString = Console.ReadLine();
+            //int secret = Convert.ToInt32(secretAsString);
+            int secret = (new Random()).Next(50, 1000); // black-box for random numbers between 50-1000
 
             Console.Write("Please enter guess: ");
             string guessAsString = Console.ReadLine();
